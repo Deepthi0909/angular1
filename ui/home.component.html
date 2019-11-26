@@ -1,0 +1,25 @@
+<h1>
+    {{ title }}
+  </h1>
+  
+  <p style="background-color: lightgrey;
+   padding:10px; margin:10px; color: black; 
+   font-weight:bold; font-size:20pt">
+   Welcome to Angular Application Development Training
+  </p>
+  
+  <p>
+    Object Details: {{ obj | json }}  <!-- is pipe or a filter-->
+  <br/>
+  Name: {{ obj.name | uppercase }}
+  <br/>
+  Name: {{ obj.name | lowercase }}
+  </p>
+  <p>
+    {{ show() }}
+    <br/>
+    {{ 10 + 50 }}
+  
+  
+  </p>
+  <button (click)="update()">Click Me</button>

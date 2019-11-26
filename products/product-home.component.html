@@ -1,0 +1,32 @@
+<section class="container ">
+
+    <h2 class="bg-success text-white text-center p-2">Products Home</h2>
+
+    <div class="row">
+    <section class="col-6 border">
+        <app-product-list
+        [productList]="listOfProducts"
+        (selectProductEvent)="select($event)">
+    </app-product-list>
+    </section>
+    <section class="col-6 border">
+        <div class="alert alert-warning">
+        <i class="fa fa-2x fa-exclamation-triangle"></i>
+        Under Construction!!
+        <i class="fas fa-5x fa-smile"></i>
+    </div>
+    <app-product-details [model]="selectedProduct"></app-product-details>
+    </section>
+</div>
+
+<div class="row">
+    <div class="col-6 border">
+        <app-product-create (onCreated)="create($event)"></app-product-create>
+    </div>
+    <div class="col-6 border">
+        <app-product-update (onupdate)="update($event)" [model]="selectedProduct" ></app-product-update>
+    </div>
+</div>
+ 
+ 
+</section>

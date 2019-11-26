@@ -1,0 +1,26 @@
+<p class="display-4 text-center">Admin Home</p>
+
+<div class="card-deck">
+    <div class="card shadow">
+        <div class="card-header card-title bg-info">Manage Customers</div>
+        <div class="card-body">
+            <div class="card-text">
+                This section is used to manage customers.
+                To view list of customers,click on "View List",
+                To add new customer,click on"ADD customer"
+                <a [routerLink]="['/admin','customers','list']"
+                    routerLinkActive="active"
+                    class="btn btn-lg btn-outline-success">
+                    View List &raquo;
+                </a>
+                <a [routerLink]="['/admin','customers','new']"
+                 routerLinkActive="active"
+                 class="btn btn-lg btn-outline-danger">
+                Add Customer &raquo;
+            </a> 
+           
+            </div>
+        </div>
+    </div>
+</div>
+
